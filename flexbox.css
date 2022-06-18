@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ body{
+    font-family: 'Lexend Deca';
+    background-color: hsl(0, 0%, 95%);
+    /* text-align: center; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+} 
+
+.grid{
+    height: 30px;
+    width: 150px;
+    margin-top: 30px;
+    border-radius: 15px;
+    border: none;
+    background-color: hsl(31, 77%, 52%);
+    font-size: 15px;
+    text-align: center;
+    font-weight: 700;
+    color:hsl(0, 0%, 95%);
+}
+
+.main{
+    /* border: 1px solid red; */
+    width: 70%;
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    width: 100%;
+    height: 70%;
+    border-radius: 10px 0px 0px 10px;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+    width: 100%;
+    height: 70%;
+    font-size: 15px;
+    font-weight: 400px;
+    text-align: left;
+}
+
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    width: 100%;
+    height: 70%;
+    border-radius: 0 10px 10px 0;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.name{
+    margin-left: 50px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.image{
+    margin: 30px;
+    width: 50px;
+}
+
+.details{
+    font-family: 'Lexend Deca';
+    font-size: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 1rem;
+}
+
+.buttonSedans{
+    margin-top: 50px;
+    margin-left: 50px;
+    height: 35px;
+    width: 100px;
+    border-radius: 30px;
+    border: none;
+    background-color:hsl(0, 0%, 95%);
+    color: hsl(31, 77%, 52%);
+    font-size: 15px;
+}
+.buttonSuvs{
+    margin-top: 50px;
+    margin-left: 50px;
+    height: 35px;
+    width: 100px;
+    border-radius: 30px;
+    border: none;
+    background-color:hsl(0, 0%, 95%);
+    color: hsl(184, 100%, 22%);
+    font-size: 15px;
+}
+
+.buttonLuxury{
+    margin-top: 50px;
+    margin-left: 50px;
+    height: 35px;
+    width: 100px;
+    border-radius: 30px;
+    border: none;
+    background-color:hsl(0, 0%, 95%);
+    color: hsl(179, 100%, 13%);
+    font-weight: 400;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 375px){
+
+    body{
+        flex-direction: row;
+    }
+
+    .details{
+        font-size: 12px;
+        padding: 0;
+        margin-left: 20px;
+    }
+
+    .main{
+        flex-direction: column;
+        /* justify-content: center; */
+        width:80%;
+        margin: 30% auto;
+        height: 100vh;
+    }
+    .sedans{
+        border-radius: 8px 8px 0px 0px;
+        text-align: left;
+        height: 100vh;
+    }
+
+    .suvs{
+        text-align: left;
+        /* border-radius: 0px 0px 8px 0px; */
+    }
+
+    .luxury{
+        text-align: left;
+        border-radius: 0px 0px 8px 8px;
+    }
+    .grid{
+        margin: 30% auto;
+        width: 100px;
+        margin-right: 10px;
+    }
+
+    .image{
+        margin-left: 50px;
+    }
+
+    .buttonSedans{
+        
+        margin: 15px;
+    }
+    .buttonLuxury{
+        margin: 15px;
+    }
+
+    .buttonSuvs{
+        margin: 15px;
+    }
+}

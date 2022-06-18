@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ body{
+    font-family: 'Lexend Deca';
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Poppins';
+    /* text-align: center; */
+} 
+
+main{
+    border: 1px solid red;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-image: url(images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+}
+
+
+.left{
+    /* border: 1px solid black; */
+    height: 50%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: brown; */
+}
+
+.left > h3{
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+    margin-left: 50px;
+    padding: 10px;
+    width: 150px;
+}
+
+.left >p{
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    margin-left: 50px;
+}
+
+.right{
+    /* border: 1px solid green; */
+    height: 80%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.header{
+    background-color: hsl(248, 32%, 49%);
+    height: 50px;
+    width: 400px;
+    border-radius: 5px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.rightBottom{
+    height: 350px;
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+input{
+    height: 40px;
+    width: 350px;
+    margin: 10px;
+    border-radius: 5px;
+    /* position: relative; */
+    border: 1px solid gray;
+    outline: none;
+    padding-left: 10px;
+}
+
+input:active{
+    border: 1px solid blue;
+}
+
+input::placeholder{
+padding-left:5px ;
+}
+
+
+.firstNmae{
+    position: relative;
+}
+
+.lastName{
+    position: relative;
+}
+
+.email{
+    position: relative;
+}
+
+.pass{
+    position: relative;
+}
+
+img{
+    position:absolute;
+    /* right: 150px; */
+    top: 15px;
+    right: 15px;
+    color: white;
+
+}
+
+button{
+    width: 350px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    background-color: darkgreen;
+    border: none;
+    border-radius: 5px;
+}
+
+.termsCon{
+    font-size: 10px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.TermsCon{
+    color: red;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 375px){
+    .rightBottom{
+        width: 300px;
+      
+    }
+
+    button{
+        width: 250px;
+        font-size: 16px;
+    }
+
+    input{
+        width: 250px;
+    }
+    .termsCon, .TermsCon{
+        font-size: 10px;
+        width: 250px;
+    }
+    main{
+        flex-direction: column;
+    }
+
+    .left >p{
+        font-size: 15px;
+        width: 300px;
+        margin-left: -50px;
+        margin-right: 50px;
+    }
+    .left > h3{
+        margin-left: -50px;
+    }
+
+    .header{
+        width: 300px;
+        border-radius: 5px;
+        margin: 30px;
+        color: white;
+        font-size: 14px;
+    }
+    
+}

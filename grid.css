@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ body{
+    font-family: 'Lexend Deca';
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+} 
+
+.flex{
+    height: 30px;
+    width: 150px;
+    margin: 50px;
+    border-radius: 15px;
+    border: none;
+    background-color: hsl(31, 77%, 52%);
+    font-size: 15px;
+    text-align: center;
+    font-weight: 700;
+    color:hsl(0, 0%, 95%);
+}
+
+
+.gridContainer{
+    display: grid;
+     justify-content: center;
+    grid-gap: 10px;
+    width: 40vw;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(8, 50%);
+    margin: auto;
+    grid-template-areas: 
+        'a a a b'
+        'a a a b'
+        'c c d d'
+        'c c e e';
+}
+
+.gridItem1{
+grid-column-start: 1;
+grid-column-end: 5;
+grid-row-start: 1;
+grid-row-end: 5;
+background-color: red;
+}
+
+.gridItem2{
+grid-column-start: 5;
+grid-column-end: 7;
+grid-row-start: 1;
+grid-row-end: 5;
+background-color: blue;
+}
+
+
+
+.gridItem7{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 9;
+    background-color: aqua;
+}
+
+.gridItem8{
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    background-color: darkgreen;
+}
+
+.gridItem14{
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 7;
+    grid-row-end: 9;
+    background-color: darkgreen;
+}
+
+@media screen and (max-width: 375px) {
+    .gridContainer{
+        grid-template-areas:  
+        'a a a a'
+        'b b b b'
+        'c c c c'
+        'd d d d'
+        'e e e e';
+        width: 90%;
+        margin: auto;
+    }
+}
